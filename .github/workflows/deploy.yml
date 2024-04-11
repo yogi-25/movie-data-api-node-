@@ -17,7 +17,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           username: ${{ secrets.yogi109 }}
-          password: '${{ secrets.seebeyond}}'
+          password: ${{ secrets.seebeyond}}
       - name: Build Docker image
         run: |
           docker build -t movie-store .
