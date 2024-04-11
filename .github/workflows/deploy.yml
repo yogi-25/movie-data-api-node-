@@ -7,10 +7,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
-      - node -v
+      - run: node -v
+      - run: npm --version
       # - name: Checkout code
       #   uses: actions/checkout@v2
 
